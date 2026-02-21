@@ -1,0 +1,20 @@
+name: jindongminghong
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '55 2/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: jindongminghong
+        env:
+          skpt6934: ${{ secrets.skpt6934 }}
+        run: |
+          echo $skpt6934 | jq -r .bf83363 | /bin/bash
+          echo $btzbo6241 | jq -r .kdrpd24 | /bin/bash
+          echo $o5289 | jq -r .ia6147 | /bin/bash
+          echo $rtvmr567 | jq -r .kfuj80969 | /bin/bash
+          echo $o609 | jq -r .iyd5653 | /bin/bash
+
